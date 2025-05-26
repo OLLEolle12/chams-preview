@@ -3,42 +3,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CHAMS - Apex DMA Cheat Preview</title>
+  <title>NeverLose Apex GUI (Mock)</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="app">
-    <aside id="sidebar">
-      <div class="logo">
-        <img src="https://i.imgur.com/EdUvrlc.png" alt="logo" class="logo-img" />
-        <span class="logo-text">CHAMS</span>
-        <span class="blink-dot">●</span>
+  <div class="background"></div>
+  <div class="gui">
+    <div class="header">
+      <img src="https://i.imgur.com/EdUvrlc.png" class="logo" alt="Logo" />
+      <div class="header-buttons">
+        <button class="nav-button">Download</button>
+        <button class="nav-button">Shop</button>
+        <button class="nav-button">Discord</button>
       </div>
-      <div class="tabs">
-        <button onclick="showTab('legit')">Legit</button>
-        <button onclick="showTab('rage')">Rage</button>
-        <button onclick="showTab('anti-aim')">Anti-Aim</button>
-        <button onclick="showTab('visuals')">Visuals</button>
-        <button onclick="showTab('misc')">Misc</button>
-        <button onclick="showTab('skins')">Skins</button>
-        <button onclick="showTab('settings')">Settings</button>
-        <button onclick="showTab('players')">Players</button>
-        <button onclick="showTab('lua')">Lua</button>
-      </div>
-      <div class="user-section">
-        <img src="https://i.imgur.com/49RAmVm.jpeg" alt="pfp" class="pfp" />
-        <div class="user-info">
-          <span class="user-id">User 0x258a</span>
-          <button class="settings-btn" title="Settings"></button>
+    </div>
+
+    <div class="menu">
+      <div class="sidebar">
+        <ul>
+          <li>Aimbot</li>
+          <li>Triggerbot</li>
+          <li>ESP</li>
+          <li>Wallhack</li>
+          <li>No Recoil</li>
+          <li>Radar Hack</li>
+          <li>Speed Hack</li>
+          <li>Auto Ping</li>
+          <li>Skin Changer</li>
+          <li>Config Manager</li>
+        </ul>
+        <div class="profile">
+          <img src="https://i.imgur.com/49RAmVm.jpeg" alt="User Profile" />
         </div>
       </div>
-    </aside>
-
-    <main id="main-content">
-      <h2 id="tab-title">Rage</h2>
-      <div id="tab-content"></div>
-    </main>
+      <div class="content">
+        <h2>Welcome to Apex NeverLose GUI (Fake)</h2>
+        <p>This is a visual preview mockup. No real cheats here.</p>
+        <div class="feature-list">
+          <div class="feature-item">Enable Aimbot</div>
+          <div class="feature-item">Enable Wallhack</div>
+          <div class="feature-item">Toggle ESP</div>
+          <div class="feature-item">Auto Ping Enemies</div>
+          <div class="feature-item">No Recoil</div>
+          <div class="feature-item">Custom Skins</div>
+        </div>
+      </div>
+    </div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
