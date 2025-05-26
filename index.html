@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHAMS - Apex DMA Cheat Preview</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <aside id="sidebar">
+      <div class="logo">
+        <img src="https://i.imgur.com/EdUvrlc.png" alt="logo" class="logo-img" />
+        <span class="logo-text">CHAMS</span>
+        <span class="blink-dot">●</span>
+      </div>
+      <div class="tabs">
+        <button onclick="showTab('legit')">Legit</button>
+        <button onclick="showTab('rage')">Rage</button>
+        <button onclick="showTab('anti-aim')">Anti-Aim</button>
+        <button onclick="showTab('visuals')">Visuals</button>
+        <button onclick="showTab('misc')">Misc</button>
+        <button onclick="showTab('skins')">Skins</button>
+        <button onclick="showTab('settings')">Settings</button>
+        <button onclick="showTab('players')">Players</button>
+        <button onclick="showTab('lua')">Lua</button>
+      </div>
+      <div class="user-section">
+        <img src="https://i.imgur.com/49RAmVm.jpeg" alt="pfp" class="pfp" />
+        <div class="user-info">
+          <span class="user-id">User 0x258a</span>
+          <button class="settings-btn" title="Settings"></button>
+        </div>
+      </div>
+    </aside>
+
+    <main id="main-content">
+      <h2 id="tab-title">Rage</h2>
+      <div id="tab-content"></div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
