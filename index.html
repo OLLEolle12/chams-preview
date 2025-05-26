@@ -3,55 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NeverLose Apex GUI</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>NEVERLOSE Apex GUI (Fake)</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="background"></div>
-
-  <div class="gui">
+  <div class="gui-wrapper">
     <div class="header">
-      <img src="https://i.imgur.com/EdUvrlc.png" class="logo" alt="Logo" />
+      <img src="https://i.imgur.com/EdUvrlc.png" alt="Logo" class="logo">
       <div class="header-buttons">
-        <button class="nav-button">Download</button>
-        <button class="nav-button">Shop</button>
-        <button class="nav-button">Discord</button>
+        <button class="btn">Download</button>
+        <button class="btn">Shop</button>
+        <button class="btn">Discord</button>
       </div>
     </div>
 
-    <div class="menu">
-      <div class="sidebar">
-        <ul>
-          <li>Aimbot</li>
-          <li>Triggerbot</li>
-          <li>ESP</li>
-          <li>Wallhack</li>
-          <li>No Recoil</li>
-          <li>Radar Hack</li>
-          <li>Speed Hack</li>
-          <li>Auto Ping</li>
-          <li>Skin Changer</li>
-          <li>Config Manager</li>
-        </ul>
-        <div class="profile">
-          <img src="https://i.imgur.com/49RAmVm.jpeg" alt="User Profile" />
-        </div>
+    <div class="tabs">
+      <button class="tab active" data-tab="aim">Aimbot</button>
+      <button class="tab" data-tab="visuals">Visuals</button>
+      <button class="tab" data-tab="misc">Misc</button>
+    </div>
+
+    <div class="content">
+      <div class="tab-content active" id="aim">
+        <label><input type="checkbox"> Rage Aimbot</label>
+        <label><input type="checkbox"> Legit Aimbot</label>
+        <label><input type="range" min="1" max="10"> Aimbot Smoothness</label>
       </div>
-      <div class="content">
-        <h2>Apex NeverLose GUI (Fake)</h2>
-        <p>Click features to toggle ON/OFF. This is a mockup.</p>
-        <div class="feature-list">
-          <div class="feature-item">Enable Aimbot</div>
-          <div class="feature-item">Enable Wallhack</div>
-          <div class="feature-item">Toggle ESP</div>
-          <div class="feature-item">Auto Ping</div>
-          <div class="feature-item">No Recoil</div>
-          <div class="feature-item">Skin Changer</div>
-        </div>
+      <div class="tab-content" id="visuals">
+        <label><input type="checkbox"> Player ESP</label>
+        <label><input type="checkbox"> Item ESP</label>
+        <label><input type="checkbox"> FOV Circle</label>
+      </div>
+      <div class="tab-content" id="misc">
+        <label><input type="checkbox"> Bhop</label>
+        <label><input type="checkbox"> Auto Loot</label>
+        <label><input type="checkbox"> Custom Crosshair</label>
       </div>
     </div>
   </div>
-
   <script src="script.js"></script>
 </body>
 </html>
