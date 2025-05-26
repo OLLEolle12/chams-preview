@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEVERLOSE Apex GUI (Fake)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="background"></div>
+  <div class="gui-wrapper">
+    <div class="header">
+      <img src="https://i.imgur.com/EdUvrlc.png" alt="Logo" class="logo">
+      <div class="header-buttons">
+        <button class="btn">Download</button>
+        <button class="btn">Shop</button>
+        <button class="btn">Discord</button>
+      </div>
+    </div>
+
+    <div class="tabs">
+      <button class="tab active" data-tab="aim">Aimbot</button>
+      <button class="tab" data-tab="visuals">Visuals</button>
+      <button class="tab" data-tab="misc">Misc</button>
+    </div>
+
+    <div class="content">
+      <div class="tab-content active" id="aim">
+        <label><input type="checkbox"> Rage Aimbot</label>
+        <label><input type="checkbox"> Legit Aimbot</label>
+        <label><input type="range" min="1" max="10"> Aimbot Smoothness</label>
+      </div>
+      <div class="tab-content" id="visuals">
+        <label><input type="checkbox"> Player ESP</label>
+        <label><input type="checkbox"> Item ESP</label>
+        <label><input type="checkbox"> FOV Circle</label>
+      </div>
+      <div class="tab-content" id="misc">
+        <label><input type="checkbox"> Bhop</label>
+        <label><input type="checkbox"> Auto Loot</label>
+        <label><input type="checkbox"> Custom Crosshair</label>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
