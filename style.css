@@ -1,14 +1,14 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #0f0f0f;
+  background-color: #0a0a0a;
   overflow: hidden;
 }
 
 .background {
   background: url('https://images.unsplash.com/photo-1603201667141-ef79f27a0c47') no-repeat center center fixed;
   background-size: cover;
-  filter: blur(3px) brightness(0.4);
+  filter: blur(4px) brightness(0.4);
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -16,11 +16,11 @@ body {
 }
 
 .gui {
-  width: 900px;
-  margin: 40px auto;
+  width: 850px;
+  margin: 60px auto;
   background: #111;
-  border-radius: 10px;
-  box-shadow: 0 0 20px #0f0;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00ff00;
   overflow: hidden;
 }
 
@@ -29,20 +29,20 @@ body {
   justify-content: space-between;
   align-items: center;
   background: #1a1a1a;
-  padding: 10px 20px;
-  border-bottom: 2px solid #0f0;
+  padding: 12px 20px;
+  border-bottom: 2px solid #00ff00;
 }
 
 .logo {
-  height: 32px;
+  height: 36px;
 }
 
 .header-buttons .nav-button {
   margin-left: 10px;
   padding: 6px 14px;
-  background: #0f0;
+  background: #00ff00;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   color: #000;
   font-weight: bold;
   cursor: pointer;
@@ -62,7 +62,7 @@ body {
   color: white;
   padding: 20px;
   width: 200px;
-  border-right: 2px solid #0f0;
+  border-right: 2px solid #00ff00;
 }
 
 .sidebar ul {
@@ -78,7 +78,7 @@ body {
 
 .sidebar ul li:hover {
   transform: scale(1.05);
-  color: #0f0;
+  color: #00ff00;
 }
 
 .profile {
@@ -90,7 +90,7 @@ body {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  border: 2px solid #0f0;
+  border: 2px solid #00ff00;
 }
 
 .content {
@@ -110,13 +110,17 @@ body {
   background: #222;
   padding: 12px;
   border-radius: 6px;
-  border: 1px solid #0f0;
-  transition: transform 0.2s ease;
+  border: 1px solid #00ff00;
+  transition: transform 0.2s ease, background 0.3s ease;
   cursor: pointer;
+  text-align: center;
 }
 
 .feature-item:hover {
   transform: scale(1.03);
-  background: #0f0;
-  color: #000;
+}
+
+.feature-item.active {
+  background: #00ff00;
+  color: black;
 }
