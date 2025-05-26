@@ -1,110 +1,122 @@
 body {
   margin: 0;
-  font-family: Consolas, monospace;
-  background-color: #111;
-  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f0f0f;
+  overflow: hidden;
 }
 
-#app {
-  display: flex;
+.background {
+  background: url('https://images.unsplash.com/photo-1603201667141-ef79f27a0c47') no-repeat center center fixed;
+  background-size: cover;
+  filter: blur(3px) brightness(0.4);
+  position: absolute;
+  width: 100vw;
   height: 100vh;
+  z-index: -1;
 }
 
-#sidebar {
-  width: 200px;
-  background-color: #0d0d0d;
+.gui {
+  width: 900px;
+  margin: 40px auto;
+  background: #111;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #0f0;
+  overflow: hidden;
+}
+
+.header {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  padding: 20px 10px;
-  box-shadow: 0 0 10px #000;
+  align-items: center;
+  background: #1a1a1a;
+  padding: 10px 20px;
+  border-bottom: 2px solid #0f0;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 30px;
+  height: 32px;
 }
 
-.logo-img {
-  width: 30px;
-  height: 30px;
-}
-
-.logo-text {
-  font-size: 18px;
-  font-weight: bold;
-  color: #fff;
-}
-
-.blink-dot {
-  color: #00ff00;
-  animation: blink 1s infinite;
-}
-
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
-}
-
-.tabs button {
-  background-color: #111;
+.header-buttons .nav-button {
+  margin-left: 10px;
+  padding: 6px 14px;
+  background: #0f0;
   border: none;
-  color: #00ff00;
-  padding: 10px;
-  text-align: left;
-  cursor: pointer;
-  margin-bottom: 5px;
-  border-radius: 6px;
-  transition: background 0.3s;
-}
-
-.tabs button:hover {
-  background-color: #00ff00;
+  border-radius: 5px;
   color: #000;
-}
-
-.user-section {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.pfp {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 2px solid #00ff00;
-}
-
-.user-info {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.user-id {
-  font-size: 13px;
   font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }
 
-.settings-btn {
-  background: url("https://i.imgur.com/EdUvrlc.png") no-repeat center;
-  background-size: contain;
-  width: 20px;
-  height: 20px;
-  border: none;
+.nav-button:hover {
+  transform: scale(1.05);
+}
+
+.menu {
+  display: flex;
+}
+
+.sidebar {
+  background: #1a1a1a;
+  color: white;
+  padding: 20px;
+  width: 200px;
+  border-right: 2px solid #0f0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 8px 0;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.sidebar ul li:hover {
+  transform: scale(1.05);
+  color: #0f0;
+}
+
+.profile {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #0f0;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  color: white;
+}
+
+.feature-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.feature-item {
+  background: #222;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #0f0;
+  transition: transform 0.2s ease;
   cursor: pointer;
 }
 
-#main-content {
-  flex-grow: 1;
-  padding: 20px;
-  background-color: #1a1a1a;
-}
-
-#tab-title {
-  color: #00ff00;
-  margin-bottom: 15px;
+.feature-item:hover {
+  transform: scale(1.03);
+  background: #0f0;
+  color: #000;
 }
